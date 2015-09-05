@@ -149,7 +149,10 @@ a.btn-red:focus, .btn-red:focus {
     max-width: 330px;
 /*    min-height: 375px;*/
     margin: 0 auto;
-    position: relative;   top: 50%;   transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 #lockup #logo {
@@ -411,9 +414,9 @@ a.btn-red:focus, .btn-red:focus {
 }
 
 #owl-portfolio .owl-controls .owl-page span{
-	width: 16px;
-	height: 16px;
-	margin: 5px 4px;
+    width: 16px;
+    height: 16px;
+    margin: 5px 4px;
 }
 
 

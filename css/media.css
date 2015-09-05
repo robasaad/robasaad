@@ -15,7 +15,7 @@
 }
 
 /* ========== Small desktop ========== */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
 
     /* Hobbies */
     #hobbies > .container > .row:nth-of-type(1) {
@@ -26,12 +26,7 @@
 }
  
 /* ========== Portrait tablet to landscape and desktop ========== */
-@media (min-width: 768px) and (max-width: 991px) {
-
-    /* Intro */
-    #intro {
-        font-size: 24px;
-    }
+@media (min-width: 768px) and (max-width: 979px) {
 
     /* About */
     #about article {
@@ -47,23 +42,7 @@
 }
  
 /* ========== Landscape phone to portrait tablet ========== */
-@media (max-width: 767px) {
-
-    /* Footer */
-    footer span {
-        display: block;
-    }
-    
-    footer #copyright {
-        margin-bottom: 10px;
-    }
-
-    footer #social-media i {
-        font-size: 30px;
-        margin: 0 5px 0 0;
-    }
-    
-}
+@media (max-width: 767px) { }
  
 /* ========== Landscape phones and down ========== */
 @media (max-width: 480px) {
@@ -77,15 +56,10 @@
     /* Typography */
     h2 {
         font-size: 28px;
-    
         line-height: 36px;
     }
 
     /* Hero */
-    #lockup {
-        top: 20%;
-        transform: none;
-    }
     
     #lockup #logo {
         width: 245px;
@@ -187,6 +161,16 @@
 
     footer #copyright {
         font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    footer #social-media i {
+        font-size: 30px;
+        margin: 0 5px 0 0;
+    }
+
+    footer span {
+        display: block;
     }
     
 }
