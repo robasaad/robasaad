@@ -1,0 +1,567 @@
+/* QUICK STYLE GUIDE
+robasaad red: #df4d4b
+robasaad black: #222021;
+dark text: #333;
+*/
+
+
+/* ========== DEFAULT STYLES ========== */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body { display: none; }
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+
+/* ========== TYPOGRAPHY ========== */
+
+/* Base styles */
+h1, h3, h4, h5, h6,
+p, span, ul, li {
+    font-family: 'Gotham Light', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font: 300 40px/60px 'Gotham Bold', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.15em;
+    margin-bottom: 1em;
+}
+
+a, a:link, a:visited {
+    color: #df4d4b;
+    border-bottom: 1px dotted #df4d4b;
+    padding-bottom: 4px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    border-bottom: 1px solid #df4d4b;
+}
+
+/* Web Fonts */
+@font-face {
+    font-family: 'Gotham Thin';
+    src: url('../fonts/gothamthin-webfont.eot');
+    src: url('../fonts/gothamthin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamthin-webfont.woff2') format('woff2'),
+         url('../fonts/gothamthin-webfont.woff') format('woff'),
+         url('../fonts/gothamthin-webfont.ttf') format('truetype'),
+         url('../fonts/gothamthin-webfont.svg#gotham_thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../fonts/gothamlight-webfont.eot');
+    src: url('../fonts/gothamlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('../fonts/gothamlight-webfont.woff') format('woff'),
+         url('../fonts/gothamlight-webfont.ttf') format('truetype'),
+         url('../fonts/gothamlight-webfont.svg#gotham_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../fonts/gothammedium-webfont.eot');
+    src: url('../fonts/gothammedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('../fonts/gothammedium-webfont.woff') format('woff'),
+         url('../fonts/gothammedium-webfont.ttf') format('truetype'),
+         url('../fonts/gothammedium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/gothambold-webfont.eot');
+    src: url('../fonts/gothambold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothambold-webfont.woff2') format('woff2'),
+         url('../fonts/gothambold-webfont.woff') format('woff'),
+         url('../fonts/gothambold-webfont.ttf') format('truetype'),
+         url('../fonts/gothambold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ========== BUTTONS ========== */
+a.btn, .btn {
+    font: 15px/26px 'Gotham Bold', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: background-color, 0.25s;
+    -webkit-transition: background-color, 0.25s;
+    color: #fff;
+    padding-bottom: 11px;
+}
+
+a.btn-red, .btn-red {
+    background-color: #df4d4b;
+    border-color: #df4d4b;
+}
+
+a.btn-red:hover, .btn-red:hover,
+a.btn-red:focus, .btn-red:focus {
+    background-color: #555;
+    border-color: #555;
+}
+
+
+/* ========== HERO ========== */
+
+#hero {
+    background: url(../img/bg_hero.jpg) center bottom no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+#lockup {
+    max-width: 330px;
+/*    min-height: 375px;*/
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+#lockup #logo {
+    width: 285px;
+    height: 245px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+}
+
+#lockup #logo i {
+    color: #df4d4b;
+    font-size: 180px;
+    line-height: 308px;
+    position: relative;
+    left: 5px;
+}
+
+#lockup h1 { 
+    color: #fff;
+    font-size: 42px;
+    line-height: 60px;
+    margin: 0.6em 0 0.2em;
+}
+
+#lockup p {
+    color: #fff;
+    font: 15px/22px 'Gotham Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    display: inline-block;
+}
+
+/* code for animated blinking cursor */
+.typed-cursor{
+    color: #fff;
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+/*@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+})*/
+
+/* Start button */
+
+#start {
+    font-size: 70px;
+    color: #fff;
+    border-bottom: none;
+    position: absolute;
+    bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 140px;
+    opacity: 0.7;
+    transition: opacity, 0.4s;
+    -webkit-transition: opacity, 0.4s;
+}
+
+#start:hover {
+    opacity: 1;
+}
+
+
+/* ========== INTRO ========== */
+
+#intro {
+    background-color: #df4d4b;
+    color: #fff;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    padding: 48px 0 68px;
+    position: relative;
+}
+#intro:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 35px 0 35px;
+    border-color: #df4e4b transparent transparent transparent;
+    -webkit-transform:rotate(360deg);
+    position: absolute;
+    bottom: -29px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+} 
+
+
+/* ========== ABOUT ME ========== */
+
+#about {
+    background-color: #fff;
+    padding: 90px 0 100px;
+    color: #333;
+}
+
+#about h2 {
+    color: #df4d4b;
+}
+
+#about h3 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+#about h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Gotham Medium', Helvetica, Arial, sans-serif;
+    margin-top: 26px;
+}
+
+#about article {
+    line-height: 28px;
+}
+
+#about article p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 1.2em;
+}
+
+#about aside {
+    
+}
+
+#about aside ul {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 34px;
+    margin: 1.5em 0 2em 0;
+    padding-left: 0;
+}
+
+#about aside ul li {
+    
+}
+
+/* Toolbox list icons */
+#about aside ul li:before {
+    color: #df4d4b;
+    font-size: 22px;
+    font-family: "robasaadcom" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#about aside ul li:nth-of-type(1):before {
+    content: 'f';
+}
+
+#about aside ul li:nth-of-type(2):before {
+    content: 'g';
+}
+
+#about aside ul li:nth-of-type(3):before {
+    content: 'h';
+}
+
+#about aside ul li:nth-of-type(4):before {
+    content: 'l';
+}
+
+#about aside ul li:nth-of-type(5):before {
+    content: 'j';
+}
+
+#about aside ul li:nth-of-type(6):before {
+    content: 'm';
+}
+
+#about aside ul li:nth-of-type(7):before {
+    content: 'i';
+}
+
+#about aside ul li:nth-of-type(8):before {
+    content: 'k';
+}
+
+
+/* ========== PORTFOLIO ========== */
+
+#portfolio {
+    height: 870px;
+    background: url(../img/bg_portfolio.jpg) no-repeat center 36%;
+    background-size: cover;
+    padding: 115px 0 0;
+}
+
+#portfolio h2 {
+    color: #df4d4b;
+}
+
+#owl-portfolio {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 400px;
+}
+
+#owl-portfolio .item {
+    max-width: 400px;
+}
+
+#owl-portfolio .item h3 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 0.5em;
+}
+
+#owl-portfolio .item .btn {
+    width: 175px;
+    padding: 9px 0 10px;
+}
+
+#owl-portfolio .owl-controls {
+    margin-top: 20px;
+}
+
+#owl-portfolio .owl-controls .owl-page span{
+    width: 16px;
+    height: 16px;
+    margin: 5px 4px;
+}
+
+
+/* ========== HOBBIES ========== */
+
+#hobbies {
+    background: url(../img/bg_hobbies.png) #222021;
+    background-size: 130px auto;
+    background-position: center center;
+    color: #fff;
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+#hobbies h2 {
+    margin-bottom: 0.8em;
+}
+
+.hobby {
+
+}
+
+.hobby i {
+    color: #df4d4b;
+    font-size: 160px;
+    line-height: 110px;
+}
+
+.hobby h3 {
+    font: 18px/28px 'Gotham Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: -28px;
+}
+
+.hobby p {
+    color: #df4d4b;
+    font-size: 15px;
+}
+
+#icon-download {
+    margin-top: 145px;
+    font-size: 18px;
+}
+
+
+/* ========== CONTACT ME ========== */
+
+#contact {
+    padding: 120px 0 300px;
+    background: ~"url(../img/bg_contact.png) no-repeat calc(50% + -40px) 100.25% #df4d4b";
+    background-size: 370px;
+}
+
+#contact h2 {
+    color: #fff;
+    margin-bottom: 0.75em;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    padding: 15px 25px;
+}
+
+textarea {
+    border: 1px solid #fff;
+    margin-top: 40px;
+    padding: 25px;
+    min-height: 270px;
+}
+
+input[type="text"], textarea {
+    color: #fff;
+    font: 26px/36px 'Gotham Light', Helvetica, Arial, sans-serif;
+    background-color: #df4d4b;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    color: #df4d4b;
+    width: 280px;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+}
+
+#contact-message {
+    display: none;
+    margin-top: 25px;
+    color: #fff;
+}
+
+
+/* ========== FOOTER ========== */
+
+footer {
+    background-color: #222021;
+    padding: 50px 0 55px;
+    text-align: center;
+}
+
+#copyright {   
+    color: #df4d4b;
+    font: 18px/30px 'Gotham Medium', Helvetica, Arial, sans-serif;
+}
+
+#social-media {
+    margin-left: 15px;
+}
+
+#social-media i {
+    font-size: 24px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+}
+
+#social-media a {
+    border-bottom: none;
+/*     transition: color, 0.25s;
+    -webkit-transition: color, 0.25s; */
+}
+
+#social-media a:hover {
+    color: #fff;
+}
